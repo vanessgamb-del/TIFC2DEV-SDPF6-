@@ -1,0 +1,140 @@
+Y aquí esta el css 
+:root{
+    --color-a: #0a0a0f;
+    --color-b: #11111a;
+    --color-c: #1a1a2e;
+    --color-d: #00f7ff;
+    --color-e: #ff00e6;
+    --color-f: #7b00ff;
+    --color-h: #a754ff;
+    --color-i: #00ff9f;
+    --color-j: #ffae00;
+    --color-k: #ff3c3c;
+    --color-l: #e6e6e6;
+    --color-m: #a0a0b0;
+}
+ 
+:root{
+    --color-a: #0a0a0f;
+    --color-b: #11111a;
+    --color-c: #1a1a2e;
+    --color-d: #00f7ff;
+    --color-e: #ff00e6;
+    --color-f: #7b00ff;
+    --color-h: #a754ff;
+    --color-i: #00ff9f;
+    --color-j: #ffae00;
+    --color-k: #ff3c3c;
+    --color-l: #e6e6e6;
+    --color-m: #a0a0b0;
+}
+ 
+ 
+/* GENERAL */
+ 
+body{
+    background-color: var(--color-a);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--color-l);
+}
+ 
+ 
+/* CONTENEDOR */
+ 
+.contenedor{
+    width: 300px;
+    padding: 20px;
+}
+ 
+ 
+/* ACERCA DE */
+ 
+.acercade{
+    margin-bottom: 40px;
+}
+ 
+.acercade h3{
+    border-bottom: 2px solid var(--color-f);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: var(--color-d);
+}
+ 
+.acercade p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color-m);
+}
+ 
+ 
+/* POPULARES */
+ 
+.populares h3{
+    border-bottom: 2px solid var(--color-f);
+    padding-bottom: 5px;
+    margin-bottom: 18px;
+    color: var(--color-d);
+}
+ 
+.populares ul{
+    list-style: none;
+    padding: 0;
+}
+ 
+.populares li{
+    margin-bottom: 10px;
+}
+ 
+.populares a{
+    text-decoration: none;
+    color: var(--color-m);
+    font-size: 18px;
+    transition: 0.3s;
+}
+ 
+.populares a:hover{
+    color: var(--color-h);
+    padding-left: 5px;
+}
+ 
+ 
+/* FOOTER */
+ 
+.piePagina{
+    background-color: var(--color-b);
+    color: var(--color-m);
+    margin-top: 60px;
+    padding: 30px 20px;
+}
+ 
+.piePagina-contenedor{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+ 
+.piePagina h3,
+.piePagina h4{
+    color: var(--color-d);
+    margin-bottom: 10px;
+}
+ 
+.piePagina ul{
+    list-style: none;
+    padding: 0;
+}
+ 
+.piePagina li{
+    margin-bottom: 5px;
+}
+ 
+.piePagina-copy{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: var(--color-m);
+    border-top: 1px solid var(--color-c);
+    padding-top: 15px;
+}

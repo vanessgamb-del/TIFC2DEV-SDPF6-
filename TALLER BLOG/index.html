@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles-acerca.css">
+    <link rel="stylesheet" href="styles-contactanos.css">
     <title>BLOG</title>
 </head>
 <body>
@@ -11,12 +13,12 @@
     <!-- BARRA DE NAVEGACIÓN -->
     <header>
         <nav class="nav">
-            <img class="nav__logo" src="Imagenes/Logo.png" alt="Imagen logo del blog">
+            <img class="nav__logo" src="Imagenes/Logo.png" alt="">
 
             <ul class="nav__items">
                 <li><a class="nav__link" href="#">Inicio</a></li>
-                <li><a class="nav__link" href="#">Acerca</a></li>
-                <li><a class="nav__link" href="#">Contacto</a></li>
+                <li><a class="nav__link" href="/acerca.html">Acerca</a></li>
+                <li><a class="nav__link" href="/contactanos.html">Contacto</a></li>
             </ul>
 
             <div class="nav__toggle">☰</div>            
@@ -32,7 +34,7 @@
 
             <!-- Titulo e imagen de portada -->
             <div>
-                <h1 class="main__title">FEATURED ARTICLE</h1>
+                <h1 class="main__title">GUIA PRINCIPAL</h1>
 
                 <picture>
                     <source 
@@ -42,12 +44,12 @@
 
                     <source 
                     media="(min-width: 426px)" 
-                    srcset="Imagenes/Paisajes/Portada-Middle.jpg" 
+                    srcset="Imagenes/Paisajes/Portada-High.jpg" 
                     type="image/jpg">
 
                     <source 
                     media="(min-width: 100px)" 
-                    srcset="Imagenes/Paisajes/Portada-Small.jpg" 
+                    srcset="Imagenes/Paisajes/Portada-High.jpg" 
                     type="image/jpg">
 
                     <img class="main__cover"
@@ -58,15 +60,15 @@
             
             <!-- Titulo secundario y parrafo -->
             <article>
-                <h2 class="main__second-title">¿COMO MOVER UN PERSONAJE?</h2>
+                <h2 class="main__second-title">¿COMO SE DESARROLLA UN VIDEOJUEGO?</h2>
                 <p class="main__text">
-                    En este blog conoce paso a paso como implementar el movimiento de un personaje con las mejores practicas
+                    En este blog aprenderás paso a paso cómo crear videojuegos desde cero, explorando mecánicas, lógica de programación y diseño interactivo, mientras aplicas buenas prácticas que te ayudarán a construir experiencias sólidas, funcionales y cada vez más profesionales.
                 </p>
             </article>
 
             <!-- Otros articulos -->
             <div>
-                <h2>RECENT ARTICLES</h2>
+                <h2 class="articles__title">ARTICULOS RECIENTES</h2>
 
                 <div class="articles-wrapper">
 
@@ -76,26 +78,25 @@
                         <a class="article__content" href="#">
 
                             <picture class="article__picture">
-
                                 <source 
                                 media="(min-width: 426px)" 
-                                srcset="Imagenes/Articulo-1/Articulo-1-middle.jpg" 
-                                type="image/jpg">
+                                srcset="Imagenes/Articulo-1/Articulo-1-high.png" 
+                                type="image/png">
 
                                 <source 
                                 media="(min-width: 300px)" 
-                                srcset="Imagenes/Articulo-1/Articulo-1-small.jpg" 
-                                type="image/jpg">                                
+                                srcset="Imagenes/Articulo-1/Articulo-1-high.png" 
+                                type="image/png">                                
 
                                 <img class="article__image"
-                                src="Imagenes/Paisajes/Portada-High.jpg" alt="Imagen portada blog 1">
+                                src="Imagenes/Articulo-1/Articulo-1-high.png" alt="Imagen portada blog 1">
                             </picture>
 
                             <div class="article__title-and-text">
                                 
-                                <h3 class="article__title">Lorem ipsum dolor sit</h3>
+                                <h3 class="article__title">CONTROL MOVIMIENTO</h3>
 
-                                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                                <p class="article__text">Control básico de movimiento para tu personaje en 2D/3D juego...</p>
                             </div>
                         </a>  
 
@@ -111,23 +112,23 @@
 
                                 <source 
                                 media="(min-width: 426px)" 
-                                srcset="Imagenes/Articulo-2/Articulo-2-middle.jpg" 
-                                type="image/jpg">
+                                srcset="Imagenes/Articulo-2/Articulo-2-middle.png" 
+                                type="image/png">
 
                                 <source 
                                 media="(min-width: 300px)" 
-                                srcset="Imagenes/Articulo-2/Articulo-2-small.jpg" 
-                                type="image/jpg">                                
+                                srcset="Imagenes/Articulo-2/Articulo-2-middle.png" 
+                                type="image/png">                                
 
                                 <img class="article__image"
-                                src="Imagenes/Articulo-2/Articulo-2-middle.jpg" alt="Imagen portada blog 2">
+                                src="Imagenes/Articulo-2/Articulo-2-middle.png" alt="Imagen portada blog 2">
                             </picture>
 
                             <div class="article__title-and-text">
                                 
-                                <h3 class="article__title">sit amet consectetur</h3>
+                                <h3 class="article__title">SISTEMA DE SALTO</h3>
 
-                                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                                <p class="article__text">Salto avanzado del personaje en entorno 2D/3D con físicas...</p>
                             </div>
                         </a>  
 
@@ -143,23 +144,23 @@
 
                                 <source 
                                 media="(min-width: 426px)" 
-                                srcset="Imagenes/Articulo-3/Articulo-3-middle.jpg" 
+                                srcset="Imagenes/Articulo-3/Articulo-3-middle.png" 
                                 type="image/jpg">
 
                                 <source 
                                 media="(min-width: 300px)" 
-                                srcset="Imagenes/Articulo-3/Articulo-3-small.jpg" 
+                                srcset="Imagenes/Articulo-3/Articulo-3-middle.png" 
                                 type="image/jpg">                                
 
                                 <img class="article__image"
-                                src="Imagenes/Articulo-3/Articulo-3-middle.jpg" alt="Imagen portada blog 3">
+                                src="Imagenes/Articulo-3/Articulo-3-middle.png" alt="Imagen portada blog 3">
                             </picture>
 
                             <div class="article__title-and-text">
                                 
-                                <h3 class="article__title">animi quia minima</h3>
+                                <h3 class="article__title">SISTEMA DE COMBATE</h3>
 
-                                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                                <p class="article__text">Sistema de combate con ataques avanzados y detección de colisiones...</p>
                             </div>
                         </a>  
 
@@ -179,21 +180,24 @@
             <div>
                 <h2 class="aside__title">ACERCA</h2>
                 <p class="aside__text">
-                    Bienvenidos a GameCode Blog, tu fuente de conocimiento sobre desarrollo de videojuegos.<br>
-                    Tips, datos curiosos y mucho mas para que te conviertas en un GAME DEV.
+                    Bienvenidos a GameCode Blog, tu fuente de conocimiento sobre desarrollo de videojuegos. Aquí no solo encontrarás información, sino una guía paso a paso para adentrarte en el mundo del desarrollo y entender cómo funcionan los juegos desde adentro.<br><br>
+
+                    Nuestro objetivo es que pases de ser jugador a creador, desarrollando habilidades reales y aprendiendo con ejemplos claros, dinámicos y enfocados en la práctica.
+
+                    Prepárate para subir de nivel como desarrollador y convertirte en un verdadero GAME DEV 🚀🎮
                 </p>
             </div>
             
             <!-- Sección popular -->
             <div>
-                <h2>POPULAR</h2>
+                <h2 class="aside__text-2">PROXIMAS FUNCIONES</h2>
 
                 <ul class="aside__items">
-                    <li>Opción #1</li>
-                    <li>Opción #2</li>
-                    <li>Opción #3</li>
-                    <li>Opción #4</li>
-                    <li>Opción #5</li>
+                    <li>Colisiones y físicas</li>
+                    <li>Animaciones del personaje</li>
+                    <li>IA avanzada de enemigos</li>
+                    <li>Sistema de vida</li>
+                    <li>Interfaz HUD</li>
                 </ul>
 
             </div>
@@ -202,8 +206,38 @@
 
     </div>
 
-    <footer>
-        <p>@ Copyright Lorem ipsum 3026</p>
+    <!-- FOOTER -->
+
+    <footer class="piePagina">
+ 
+        <div class="piePagina-contenedor">
+ 
+            <div class="piePagina-proyecto">
+<h3>Solaris Blog</h3>
+<p>Análisis del movimiento y animación de personajes en videojuegos.</p>
+</div>
+ 
+            <div class="piePagina-autores">
+<h4>Autores</h4>
+<ul>
+<li>Oscar Moreno</li>
+<li>Enith Vargas</li>
+<li>Yuly Beltran</li>
+<li>Angie Gamboa</li>
+</ul>
+</div>
+ 
+            <div class="piePagina-contacto">
+<h4>Contacto</h4>
+<p>Email: contacto@solarisblog.com</p>
+</div>
+ 
+        </div>
+ 
+        <p class="piePagina-copy">
+            © 2026 Solaris Blog - Todos los derechos reservados
+</p>
+ 
     </footer>
 
 </body>

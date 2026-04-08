@@ -15,10 +15,10 @@
 
 
     /* OTRAS VARIABLES */
-    --text-shadow-a: 0 0 15px var(--color-e);
-    --box-shadow-a: 0 0 15px 0 var(--color-f);
-    --text-shadow-b: 0 0 10px var(--color-f);;
+    --text-shadow-a: 0 2px 10px var(--color-e);
+    --text-shadow-b: 0 2px 10px var(--color-f);
 
+    --box-shadow-a: 0 0 15px 0 var(--color-f);
 }
 
 * {
@@ -31,7 +31,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: left;
     color: #e8e8e8;
-    background-color: #18182a;
+    background-color: #15152a !important;
 
     /* Haciendo que el footer siempre esté al final */
     display: flex;
@@ -49,7 +49,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
     gap: 30px;
     border-radius: 0 0 20px 20px;
     flex-wrap: wrap;
@@ -60,8 +60,8 @@ header {
 }
 
 .nav__logo {
-    width: 200px;
-    height: 30px;
+    width: 220px;
+    height: 50px;
 }
 
 .nav__items {
@@ -77,15 +77,15 @@ header {
     padding: 15px 30px;
     border-radius: 10px;
     color: var(--color-d);
-    text-shadow: 0 0 10px #00f7ff;
+    text-shadow: var(--text-shadow-b);
     transition: background-color 0.5s, color 0.5s, outline 0.2s, box-shadow 0.5s;
 }
 
 .nav__link:hover {
     background-color: var(--color-f);
     color: #292929;
-    outline: 3px dashed #000;
-    box-shadow: 0 0 10px 0 #000;
+    outline: 3px dashed var(--color-d);
+    box-shadow: 0 0 10px 0 var(--color-d);
 }
 
 .nav__toggle {
@@ -160,6 +160,11 @@ p {
 
 
 /* Articulos recientes */
+.articles__title {
+    color: var(--color-d);
+    text-shadow: 0 0 10px var(--color-d);
+}
+
 .articles-wrapper {
     margin-top: 20px;
     display: flex;
@@ -176,19 +181,15 @@ p {
     transition: color 0.3s;
 }
 
-.article__content:hover {
-    color: #ffa200;
-}
-
 .article__picture {
     width: 40%;
 }
 
 .article__image {
     width: 100%;
-    border: 3px solid #000;
+    border: 4px dashed var(--color-f);
     border-radius: 10px;
-    box-shadow: 2px 2px 5px 0 #000;
+    box-shadow: var(--box-shadow-a);
 }
 
 .article__title-and-text {
@@ -199,11 +200,25 @@ p {
     margin-bottom: 10px;
     font-size: 1.3rem;
     text-wrap: pretty;
+    color: var(--color-d);
+    text-shadow: var(--text-shadow-b);
 }
 
 .article__text {
     display: none;
+    color: var(--color-h);
+    text-shadow: var(--text-shadow-b);
 }
+
+.article__title:hover, .article__text:hover {
+    color: var(--color-j);
+}
+
+.article__image:hover {
+    box-shadow: 0 0 20px 0 var(--color-h);
+    transform: scale(1.1);
+}
+
 
 @media screen and (min-width: 426px) {
     .articles-wrapper {
@@ -281,6 +296,13 @@ p {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    color: var(--color-i);
+    text-shadow: var(--text-shadow-b);
+}
+
+.aside__text-2 {
+    color: var(--color-d);
+    text-shadow: var(--text-shadow-b);
 }
 
 .aside__items li {
@@ -303,150 +325,13 @@ p {
 footer {
     width: 100%;
     margin-top: auto; /* Para que el footer siempre esté abajo */
-    border-top: 3px solid #000;
     padding: 40px;
-    border-radius: 10px 10px 0 0;
-    box-shadow: 10px 0 10px 0 #000;
+    border-radius: 20px 20px 0 0;
     text-align: center;
+    border: 4px dashed var(--color-f);
+    box-shadow: 0 0 15px 0 var(--color-f);
 }
 
 footer p {
     font-weight: bold;
 }
-
-
-.container {
-        max-width: 1100px;
-        margin: 50px auto;
-        padding: 20px;
-    }
-
-    h1 {
-        text-align: center;
-        margin-bottom: 40px;
-        color:var(--color-h);
-    }
-
-    .contact-wrapper {
-        display: flex;
-        gap: 30px;
-        flex-wrap: wrap;
-    }
-
-    /* INFO */
-    .contact-info {
-        
-        background: #141D35;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
-    }
-
-    .contact-info h2 {
-        margin-bottom: 20px;
-        color: var(--color-h);
-    }
-
-    .info-item {
-        margin-bottom: 20px;
-    }
-
-    .info-item h4 {
-        margin-bottom: 5px;
-        color: #ffffff;
-    }
-
-    /* FORM */
-    .contact-form {
-        flex: 1;
-        background-image: url(Imagenes/Image20260408114409.png);
-        background-position: center;     /* centra la imagen */
-        background-size: cover;          /* ocupa todo el contenedor */
-        background-repeat: no-repeat; 
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    }
-
-    .contact-form h2 {
-        margin-bottom: 20px;
-        color: var(--color-e);
-        text-shadow:var(--color-c);
-        text-shadow: 2 5px 15px rgba(255, 0, 230, 1);
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    input, textarea {
-        padding: 12px;
-        margin-bottom: 15px;
-        border-radius: 8px;
-        border: 1px solid #ccc;
-        font-size: 15px;
-        opacity: 0.9;
-    }
-
-    textarea {
-        resize: none;
-        height: 120px;
-    }
-
-    button {
-        padding: 12px;
-        border: none;
-        background: var(--color-h);
-        color: white;
-        border-radius: 8px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-
-    button:hover {
-        background: #ffffff;
-        color: var(--color-e);
-    }
-    input, textarea {
-    padding: 12px;
-    border-radius: 8px;
-    border: 2px solid #ddd;
-    background-color: #b8b8b9;
-    transition: 0.3s;
-}
-
-input:focus, textarea:focus {
-    border-color: #007BFF;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0,123,255,0.3);
-}
-
-
-
-
-    /* RESPONSIVE */
-
-    @media (max-width: 1024px) {
-
-    .contact-wrapper {
-        flex-direction: column; /* se apilan */
-        align-items: center;    /* centra horizontal */
-    }
-
-    .contact-info,
-    .contact-form {
-        width: 100%;
-        max-width: 600px; /* tamaño cómodo en tablet */
-    }
-
-}
-    @media (max-width: 768px) {
-        .contact-wrapper {
-            flex-direction: column;
-        }
-    }
