@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BLOG</title>
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header>
+        <nav class="nav">
+            <img class="nav__logo" src="Imagenes/Logo.png" alt="Imagen logo del blog">
+
+            <ul class="nav__items">
+                <li><a class="nav__link" href="#">Inicio</a></li>
+                <li><a class="nav__link" href="#">Acerca</a></li>
+                <li><a class="nav__link" href="#">Contacto</a></li>
+            </ul>
+
+            <div class="nav__toggle">☰</div>            
+        </nav>
+    </header>
+
+
+    <!-- HOLY GRAIL -->
+    <div class="wrapper-container">
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main">
+
+            <!-- Titulo e imagen de portada -->
+            <div>
+                <h1 class="main__title">FEATURED ARTICLE</h1>
+
+                <picture>
+                    <source 
+                    media="(min-width: 1025px)" 
+                    srcset="Imagenes/Paisajes/Portada-High.jpg" 
+                    type="image/jpg">
+
+                    <source 
+                    media="(min-width: 426px)" 
+                    srcset="Imagenes/Paisajes/Portada-Middle.jpg" 
+                    type="image/jpg">
+
+                    <source 
+                    media="(min-width: 100px)" 
+                    srcset="Imagenes/Paisajes/Portada-Small.jpg" 
+                    type="image/jpg">
+
+                    <img class="main__cover"
+                    src="Imagenes/Paisajes/Portada-High.jpg"
+                    alt="Imagen paisaje de portada">
+                </picture>
+            </div>
+            
+            <!-- Titulo secundario y parrafo -->
+            <article>
+                <h2 class="main__second-title">¿COMO MOVER UN PERSONAJE?</h2>
+                <p class="main__text">
+                    En este blog conoce paso a paso como implementar el movimiento de un personaje con las mejores practicas
+                </p>
+            </article>
+
+            <!-- Otros articulos -->
+            <div>
+                <h2>RECENT ARTICLES</h2>
+
+                <div class="articles-wrapper">
+
+                    <!-- Articulo #1 -->
+                    <article class="article">
+
+                        <a class="article__content" href="#">
+
+                            <picture class="article__picture">
+
+                                <source 
+                                media="(min-width: 426px)" 
+                                srcset="Imagenes/Articulo-1/Articulo-1-middle.jpg" 
+                                type="image/jpg">
+
+                                <source 
+                                media="(min-width: 300px)" 
+                                srcset="Imagenes/Articulo-1/Articulo-1-small.jpg" 
+                                type="image/jpg">                                
+
+                                <img class="article__image"
+                                src="Imagenes/Articulo-1/Articulo-1-middle.jpg" alt="Imagen portada blog 1">
+                            </picture>
+
+                            <div class="article__title-and-text">
+                                
+                                <h3 class="article__title">Lorem ipsum dolor sit</h3>
+
+                                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            </div>
+                        </a>  
+
+                    </article>
+                    
+
+                    <!-- Articulo #2 -->
+                     <article class="article">
+
+                        <a class="article__content" href="#">
+
+                            <picture class="article__picture">
+
+                                <source 
+                                media="(min-width: 426px)" 
+                                srcset="Imagenes/Articulo-2/Articulo-2-middle.jpg" 
+                                type="image/jpg">
+
+                                <source 
+                                media="(min-width: 300px)" 
+                                srcset="Imagenes/Articulo-2/Articulo-2-small.jpg" 
+                                type="image/jpg">                                
+
+                                <img class="article__image"
+                                src="Imagenes/Articulo-2/Articulo-2-middle.jpg" alt="Imagen portada blog 2">
+                            </picture>
+
+                            <div class="article__title-and-text">
+                                
+                                <h3 class="article__title">sit amet consectetur</h3>
+
+                                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            </div>
+                        </a>  
+
+                    </article>                     
+                     
+
+                    <!-- Articulo #3 -->
+                     <article class="article">
+
+                        <a class="article__content" href="#">
+
+                            <picture class="article__picture">
+
+                                <source 
+                                media="(min-width: 426px)" 
+                                srcset="Imagenes/Articulo-3/Articulo-3-middle.jpg" 
+                                type="image/jpg">
+
+                                <source 
+                                media="(min-width: 300px)" 
+                                srcset="Imagenes/Articulo-3/Articulo-3-small.jpg" 
+                                type="image/jpg">                                
+
+                                <img class="article__image"
+                                src="Imagenes/Articulo-3/Articulo-3-middle.jpg" alt="Imagen portada blog 3">
+                            </picture>
+
+                            <div class="article__title-and-text">
+                                
+                                <h3 class="article__title">animi quia minima</h3>
+
+                                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            </div>
+                        </a>  
+
+                    </article>
+                     
+                </div>
+
+            </div>                        
+
+        </main>
+
+
+        <!-- CONTENIDO SECUNDARIO -->
+        <aside class="aside">
+
+            <!-- Sección de about -->
+            <div>
+                <h2 class="aside__title">ACERCA</h2>
+                <p class="aside__text">
+                    Bienvenidos a GameCode Blog, tu fuente de conocimiento sobre desarrollo de videojuegos.<br>
+                    Tips, datos curiosos y mucho mas para que te conviertas en un GAME DEV.
+                </p>
+            </div>
+            
+            <!-- Sección popular -->
+            <div>
+                <h2>POPULAR</h2>
+
+                <ul class="aside__items">
+                    <li>Opción #1</li>
+                    <li>Opción #2</li>
+                    <li>Opción #3</li>
+                    <li>Opción #4</li>
+                    <li>Opción #5</li>
+                </ul>
+
+            </div>
+            
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>@ Copyright Lorem ipsum 3026</p>
+    </footer>
+
+</body>
+</html>
